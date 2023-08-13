@@ -1,0 +1,10 @@
+---
+# tasks file for ansible_install_openvpn_centos
+- name: Install epel-release
+  ansible.builtin.yum:
+    name: epel-release
+    state: present
+- name: Install openvpn
+  ansible.builtin.yum:
+    name: openvpn
+    state: present

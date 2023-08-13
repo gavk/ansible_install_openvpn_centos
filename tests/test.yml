@@ -1,0 +1,6 @@
+---
+- name: Run role gavk.ansible_install_openvpn_centos
+  hosts: localhost
+  remote_user: root
+  roles:
+    - gavk.ansible_install_openvpn_centos

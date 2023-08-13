@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include gavk.ansible_install_openvpn_centos"
+      ansible.builtin.include_role:
+        name: "gavk.ansible_install_openvpn_centos"
